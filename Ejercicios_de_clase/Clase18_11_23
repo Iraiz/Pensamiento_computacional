@@ -1,0 +1,195 @@
+%%%%%% Saca del programa si hay número negativo
+%*****************************************************Programa PseInt
+Funcion multi <- MultiplicarDosNumeros(num1,num2)
+	multi <- (num1*num2)
+FinFuncion
+
+Algoritmo calcular_mult
+  	Definir num1,num2,res Como Entero
+  	PedirNumero()
+  	leer num1
+	//condicional simple
+    Si num1>0 Entonces
+      	PedirNumero()
+      	leer num2
+		//condicional simple
+        Si num2>0 Entonces
+            escribir num1," * ",num2," = "
+          	leer res
+          	escribir "el resultado es ",abs(MultiplicarDosNumeros(num1,num2))," tu respues es ", res = MultiplicarDosNumeros(num1,num2)	
+			Si res=num1*num2 Entonces
+				Escribir "Correcto"
+			SiNo
+				Escribir "Incorrecto"
+			Fin Si
+		SiNo
+			Escribir "Número negativo"
+		Fin si
+	SiNo
+		Escribir "Número negativo"
+    Fin Si
+FinAlgoritmo
+
+%%%%%%%%%%%  Muestra menú de las 4 operaciones de aritmetica
+%*****************************************************Programa PseInt
+Algoritmo calcular_mult
+Definir num1,num2,res,oper Como Entero
+
+num1<-azar(100)+1
+num2<-azar(9)+1
+
+Escribir "Elige la operación"
+Escribir "Suma"
+Escribir "Resta"
+Escribir "Multiplicación"
+Escribir "División"
+Leer oper
+
+Si oper=1 Entonces
+	Escribir num1,"+",num2,"="
+	Leer Res
+	Si res=num1+num2 Entonces
+		Escribir "Correcto"
+SiNo
+	Escribir "Incorrecto"
+Fin Si
+SiNo
+	Si oper=2 Entonces
+		Escribir num1,"-",num2,"="
+		Leer Res
+		Si res=num1-num2 Entonces
+			Escribir "Correcto"
+		SiNo
+			Escribir "Incorrecto"
+		Fin Si
+		
+	SiNo
+		Si oper=3 Entonces
+			Escribir num1,"*",num2,"="
+			Leer Res
+			Si res=num1*num2 Entonces
+				Escribir "Correcto"
+			SiNo
+				Escribir "Incorrecto"
+			Fin Si
+		SiNo
+			Si oper=4 Entonces
+				Escribir num1,"/",num2,"="
+				Leer Res
+				Si res=num1/num2 Entonces
+					Escribir "Correcto"
+				SiNo
+					Escribir "Incorrecto"
+				Fin Si
+			SiNo
+				Escribir "Operador no valido"
+			Fin Si
+		Fin Si
+	Fin Si
+Fin Si
+FinAlgoritmo
+%%%%%%%%%%%%%%%%%%%%%%% Creación de Switch y muestra de operaciones random de aritmetica
+%*****************************************************Programa PseInt
+Algoritmo calcular_mult
+	Definir num1,num2,res,oper Como Entero
+	
+	num1<-azar(100)+1
+	num2<-azar(9)+1
+	oper<-azar(3)+1
+	
+	Si oper=1 Entonces
+		Escribir num1,"+",num2,"="
+		Leer Res
+		Si res=num1+num2 Entonces
+			Escribir "Correcto"
+		SiNo
+			Escribir "Incorrecto"
+		Fin Si
+	SiNo
+		Si oper=2 Entonces
+			Escribir num1,"-",num2,"="
+			Leer Res
+			Si res=num1-num2 Entonces
+				Escribir "Correcto"
+			SiNo
+				Escribir "Incorrecto"
+			Fin Si
+			
+		SiNo
+			Si oper=3 Entonces
+				Escribir num1,"*",num2,"="
+				Leer Res
+				Si res=num1*num2 Entonces
+					Escribir "Correcto"
+				SiNo
+					Escribir "Incorrecto"
+				Fin Si
+			SiNo
+				Si oper=4 Entonces
+					Escribir num1,"/",num2,"="
+					Leer Res
+					Si res=num1/num2 Entonces
+						Escribir "Correcto"
+					SiNo
+						Escribir "Incorrecto"
+					Fin Si
+				SiNo
+					Escribir "Operador no valido"
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Si
+FinAlgoritmo
+%%%%%%%%%%%%%%% Programa con aplicación de bucle for
+%*****************************************************Programa PseInt
+Algoritmo calcular_mult
+	Definir num1,num2,res,oper,atinadas Como Entero
+	
+	Para i<-0 Hasta 10 Con Paso 1 Hacer
+		num1<-azar(100)+1
+		num2<-azar(9)+1
+		oper<-azar(3)+1
+			Segun oper Hacer
+			1:
+				Escribir num1,"+",num2,"="
+				Leer Res
+				Si res=num1+num2 Entonces
+					Escribir "Correcto"
+					atinadas<-atinadas+1
+				SiNo
+					Escribir "Incorrecto"
+				Fin Si
+			2:
+				Escribir num1,"-",num2,"="
+				Leer Res
+				Si res=num1-num2 Entonces
+					Escribir "Correcto"
+					atinadas<-atinadas+1
+				SiNo
+					Escribir "Incorrecto"
+				Fin Si
+			3:
+				Escribir num1,"*",num2,"="
+				Leer Res
+				Si res=num1*num2 Entonces
+					Escribir "Correcto"
+					atinadas<-atinadas+1
+				SiNo
+					Escribir "Incorrecto"
+				Fin Si
+			4:
+				Escribir num1,"/",num2,"="
+				Leer Res
+				Si res=num1/num2 Entonces
+					Escribir "Correcto"
+					atinadas<-atinadas+1
+				SiNo
+					Escribir "Incorrecto"
+				Fin Si
+			De Otro Modo:
+				Escribir "Operador no valido"
+		Fin Segun
+	Fin Para
+		Escribir "Atinaste a",atinadas
+	
+FinAlgoritmo
