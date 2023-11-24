@@ -30,7 +30,7 @@ Algoritmo calcular_mult
     Fin Si
 FinAlgoritmo
 
-%%%%%%%%%%%  Muestra menú de las 4 operaciones de aritmetica
+%%%%%%%%%%%  Muestra menú de las 4 operaciones de aritmética
 %*****************************************************Programa PseInt
 Algoritmo calcular_mult
 Definir num1,num2,res,oper Como Entero
@@ -88,7 +88,7 @@ SiNo
 	Fin Si
 Fin Si
 FinAlgoritmo
-%%%%%%%%%%%%%%%%%%%%%%% Creación de Switch y muestra de operaciones random de aritmetica
+%%%%%%%%%%%%%%%%%%%%%%% Creación de Switch y muestra de operaciones random de aritmética
 %*****************************************************Programa PseInt
 Algoritmo calcular_mult
 	Definir num1,num2,res,oper Como Entero
